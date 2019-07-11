@@ -1,0 +1,33 @@
+.side-drawer {
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55vw;
+    max-width: 400px;
+    z-index: 200
+}
+
+.side-drawer > ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-drawer li {
+    margin: 1.5rem 0
+}
+
+.side-drawer a {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

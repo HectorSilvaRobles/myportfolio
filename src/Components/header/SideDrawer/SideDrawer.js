@@ -1,15 +1,11 @@
 import React from 'react'
 
-import DrawerToggleButton from '../header/SideDrawer/DrawerToggleButton'
-import './header.css'
+import './sidedrawer.css'
 
-export default function Header() {
+export default function SideDrawer(props) {
     return (
-        <div id='header'>
-            <div className='logo'>
-                <h1>Hector Silva-Robles</h1>
-            </div>
-            <nav className='nav'>
+        <div>
+            <nav className='side-drawer'>
                 <ul>
                     <li><a href='/'>Home</a></li>
                     <li><a href='/portfolio'>Portfolio</a></li>
@@ -17,11 +13,7 @@ export default function Header() {
                     <li><a href='/skills'>Skills</a></li>
                     <li><a href='/contact'>Contact</a></li>
                 </ul>
-                
             </nav>
-            <div>
-                    <DrawerToggleButton />
-                </div>
         </div>
     )
 }
