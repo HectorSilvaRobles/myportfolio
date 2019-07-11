@@ -7,19 +7,24 @@ import About from './Components/about/About'
 import Skills from './Components/skills/Skills'
 import Contact from './Components/contact/Contact'
 
+import SideDrawer from './Components/header/SideDrawer/SideDrawer'
+import Backdrop from './Components/backdrop/Backdrop'
+
 function App() {
   return (
     <div className="App">
       <header>
         <Header />
+        <SideDrawer />
+        <Backdrop />
       </header>
-      <body>
+      <main>
         <Banner />
         <Projects />
         <About />
         <Skills />
         <Contact />
-      </body>
+      </main>
       
     </div>
   );
