@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './Components/header/Header'
 import Banner from './Components/banner/Banner'
@@ -10,24 +10,48 @@ import Contact from './Components/contact/Contact'
 import SideDrawer from './Components/header/SideDrawer/SideDrawer'
 import Backdrop from './Components/backdrop/Backdrop'
 
-function App() {
-  return (
-    <div className="App">
-      <header>
-        <Header />
-        <SideDrawer />
-        <Backdrop />
-      </header>
-      <main>
-        <Banner />
-        <Projects />
-        <About />
-        <Skills />
-        <Contact />
-      </main>
+class App extends React.Component {
+  state = {
+    sideDrawerOpen: false
+  }
+
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen}
+    })
+  }
+
+  backdropClickHandler = () => {
+    this.setState({
+      sideDrawerOpen: false
+    })
+  }
+  render(){
+    
+    let backDrop;
+
+    if(this.state.sideDrawerOpen){
       
-    </div>
-  );
+      backDrop = <Backdrop click={this.backdropClickHandler} />
+    }
+    return (
+      <div className="App">
+        <header>
+          <Header drawerClickHandler = {this.drawerToggleClickHandler} />
+          <SideDrawer show={this.state.sideDrawerOpen} />
+          {backDrop }
+        </header>
+        <main>
+          <Banner />
+          <Projects />
+          <About />
+          <Skills />
+          <Contact />
+        </main>
+        
+      </div>
+    );
+  }
 }
 
 export default App;

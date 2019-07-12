@@ -4,7 +4,7 @@ import './backdrop.css'
 
 export default function Backdrop(props) {
     return (
-        <div className='backdrop'>
+        <div className='backdrop' onClick={props.click}>
             
         </div>
     )
