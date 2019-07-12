@@ -2,8 +2,9 @@ import React from 'react'
 
 import DrawerToggleButton from '../header/SideDrawer/DrawerToggleButton'
 import './header.css'
+import { tsPropertySignature } from '@babel/types';
 
-export default function Header() {
+export default function Header(props) {
     return (
         <div id='header'>
             <div className='logo'>
@@ -19,9 +20,9 @@ export default function Header() {
                 </ul>
                 
             </nav>
-            <div>
-                    <DrawerToggleButton />
-                </div>
+            <div className='drawer'>
+                    <DrawerToggleButton click={props.drawerClickHandler} />
+            </div>
         </div>
     )
 }
