@@ -1,4 +1,25 @@
 #banner {
     background: green;
-    height: 95vh;
+    position: static;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-back {
+    width: 100%;
+    height: calc(100vh);
+    background: url('https://www.pxwall.com/wp-content/uploads/2018/06/Wallpaper%20Sneffels,%20mountain,%20trees,%20winter,%20forest,%204k,%20Nature%205807618313.jpg') no-repeat 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-back > img {
+    width: 100vw;
+    position: absolute;
+    margin: 0 auto;
+    top: 20;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
