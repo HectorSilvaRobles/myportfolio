@@ -1,0 +1,45 @@
+.slider {
+    width: 90%;
+}
+
+.skill-cards{
+    height: 200px;
+    /* border: solid lightgrey 2px; */
+    margin-left: 10px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    width: 100%;
+}
+
+.skill-cards:active{
+    outline: none;
+    border: none;
+}
+
+.circle{
+     background: white;
+     height: 150px;
+     border-radius: 50%;
+     width: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center
+}
+
+.circle > img {
+    width: 130px;
+}
+
+.skill-info > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
