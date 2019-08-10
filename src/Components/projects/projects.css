@@ -1,4 +1,45 @@
 #projects{
-    background: purple;
-    height: 35vh;
+    background: #111111;
+    position: relative;
+    height: calc(110vh);
+    overflow: hidden;
+}
+
+.intro-projects{
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 50%;
+    margin: 10px;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    
+}
+
+.project-component {
+    height: 85%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 20;
+    
+}
+
+.text-projects {
+    font-size: 70px;
 }

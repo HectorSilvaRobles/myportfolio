@@ -135,3 +135,7 @@ html {
 * {
   box-sizing: inherit;
 }
+
+button:focus {
+  outline: 0;
+}

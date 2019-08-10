@@ -7,7 +7,7 @@
     right: 0;
     width: 55vw;
     max-width: 400px;
-    z-index: 200;
+    z-index: 4005;
     transform: translateX(100%);
     transition: transform 0.4s ease-out;
 }
@@ -41,10 +41,11 @@
 
 .side-drawer.open{
     transform: translateX(0);
+    z-index: 4005;
 
 }
 
-@media (min-width: 851px){
+@media (min-width: 951px){
     .side-drawer{
         display: none;
     }
